@@ -1,8 +1,14 @@
 #include "Zombie.hpp"
 #include <iostream>
 
+# define SIZE 5
+
 int	main(void)
 {
-	Zombie* my_zombies = zombieHorde(5, "Casey");
-	std::cout << my_zombies[0].getName() << std::endl;
+	Zombie* my_zombies = zombieHorde(SIZE, "Casey");
+
+	for (int i = 0; i < SIZE; i++)
+		my_zombies[i].announce();
+
+	delete [] my_zombies;
 }
