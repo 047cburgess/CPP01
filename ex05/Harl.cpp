@@ -27,7 +27,7 @@ void	Harl::_warning(void)
 
 void	Harl::_error(void)
 {
-	std::cerr << "MY ERROR" << std::endl;
+	std::cout << "MY ERROR" << std::endl;
 }
 
 void	Harl::complain(std::string level)

@@ -10,5 +10,7 @@ int	main(void)
 	for (int i = 0; i < SIZE; i++)
 		my_zombies[i].announce();
 
+	std::cout << "Before delete" << std::endl;
 	delete [] my_zombies;
+	std::cout << "After delete" << std::endl;
 }

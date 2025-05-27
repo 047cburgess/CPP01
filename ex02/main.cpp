@@ -7,11 +7,11 @@ int	main(void)
 	std::string *stringPTR = &str;
 	std::string &stringREF = str;
 
-	std::cout << &str << std::endl; 
-	std::cout << &stringPTR << std::endl; 
-	std::cout << &stringREF << std::endl; 
+	std::cout << "Addr str: " << &str << std::endl; 
+	std::cout << "Addr strPTR: " << &stringPTR << std::endl; 
+	std::cout << "Addr strREF: " << &stringREF << std::endl; 
 
-	std::cout << str << std::endl;
-	std::cout << *stringPTR << std::endl;
-	std::cout << stringREF << std::endl;
+	std::cout << "Value str: " << str << std::endl;
+	std::cout << "Value pointed to by strPTR: " << *stringPTR << std::endl;
+	std::cout << "Value pointed to by strREF: " << stringREF << std::endl;
 }
